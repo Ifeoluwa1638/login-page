@@ -33,6 +33,7 @@ header{
     font-size: 2em;
     color: #fff;
     user-select: none;
+    /* border: 2px solid; */
 }
 
 .navigation a {
@@ -42,6 +43,19 @@ header{
     text-decoration: none;
     font-weight: 500;
     margin-left: 40px;
+}
+@media screen and (max-width:850px) {
+    header{
+        display: flex;
+        padding: 0;
+    }
+    .navigation{
+        display: none;
+    }
+    .logo{
+        /* border: 2px solid; */
+        flex-grow: 1;
+    }
 }
 
 .navigation a::after{
